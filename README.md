@@ -72,17 +72,17 @@
          ```
 10. **Tornar o Script Executável**
     - Execute o seguinte comando:
-    - `sudo chmod +x /usr/local/bin/verificacao_apache.sh` Concede permissões de execução ao script.
+        - `sudo chmod +x /usr/local/bin/verificacao_apache.sh` Concede permissões de execução ao script.
 
 12. **Configuração do Cron**
     - Execute o seguinte comando:
-    - `sudo crontab -e` Abre o editor do crontab para o usuário root.
+        - `sudo crontab -e` Abre o editor do crontab para o usuário root.
 
-      - Adicionar a seguinte linha ao cron:
-          ```
-          */5 * * * * /usr/local/bin/verificacao_apache.sh
-          ``` 
-       - Esta linha configura o script para ser executado a cada 5 minutos.
+          - Adicionar a seguinte linha ao cron:
+              ```
+              */5 * * * * /usr/local/bin/verificacao_apache.sh
+              ``` 
+           - Esta linha configura o script para ser executado a cada 5 minutos.
 
 **Conclusão**
   - Foram realizadas as seguinte estapas: Instalação e configuração do NFS Server e do Apache, bem como a criação de um script de verificação que monitorará o status do Apache e registrará essa informação a cada 5 minutos em seu diretório.
